@@ -25,7 +25,7 @@ All code is written in Python 3 and uses RL environments from [OpenAI Gym](https
 - [Dynamic Programming Policy Evaluation](DP/Policy%20Evaluation%20Solution.ipynb)
 - [Dynamic Programming Policy Iteration](DP/Policy%20Iteration%20Solution.ipynb)
 - [Dynamic Programming Value Iteration](DP/Value%20Iteration%20Solution.ipynb)
-- [Monte Carlo Prediction](MC/MC%20Prediction%20Solution.ipynb)
+- [Monte Carlo Prediction](MC/MC%20Prediction.ipynb)
 
 
 ### Resources
