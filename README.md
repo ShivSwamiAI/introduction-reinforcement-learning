@@ -1,7 +1,5 @@
 ### Overview
 
-## Note: This is a forked repository from [@dennybritz](https://github.com/dennybritz/reinforcement-learning) excellent repository on Reinforcement Learning. My contributions are: own solutions, visualizations and bonus implementations.
-
 This repository provides code, exercises and solutions for popular Reinforcement Learning algorithms. These are meant to serve as a learning tool to complement the theoretical materials from
 
 - [Reinforcement Learning: An Introduction (2nd Edition)](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
@@ -38,3 +36,5 @@ Classes:
 
 - [David Silver's Reinforcement Learning Course (UCL, 2015)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
+### Acknowledgements
+- This is a forked repository from [@dennybritz](https://github.com/dennybritz/reinforcement-learning) excellent resources on Reinforcement Learning.
