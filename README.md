@@ -37,4 +37,4 @@ Classes:
 - [David Silver's Reinforcement Learning Course (UCL, 2015)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 ### Acknowledgements
-- This is a forked repository from [@dennybritz](https://github.com/dennybritz/reinforcement-learning) excellent resources on Reinforcement Learning.
+- Full credit to [@dennybritz](https://github.com/dennybritz/reinforcement-learning) for providing the assignment templates and READMEs.
