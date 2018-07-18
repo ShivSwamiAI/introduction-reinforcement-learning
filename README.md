@@ -7,12 +7,13 @@ This repository provides code, exercises and solutions for popular Reinforcement
 
 Each folder in corresponds to one or more chapters of the above textbook and/or course. In addition to exercises and solution, each folder also contains a list of learning goals, a brief concept summary, and links to the relevant readings.
 
-All code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [Tensorflow](https://www.tensorflow.org/) for neural network implementations.
+All code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [Tensorflow](https://pytorch.org/) for value functio approximators such as neural networks.
 
 
 ### Table of Contents
 
 - [Introduction to RL problems & OpenAI Gym](Introduction/)
+- [Multi-armed Bandits](Bandits/)
 - [MDPs and Bellman Equations](MDP/)
 - [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DP/)
 - [Monte Carlo Model-Free Prediction & Control](MC/)
@@ -36,7 +37,7 @@ Classes:
 
 - [David Silver's Reinforcement Learning Course (UCL, 2015)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
-### License
+### COPYRIGHTS
 
 MIT License
 
