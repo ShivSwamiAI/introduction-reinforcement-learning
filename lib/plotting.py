@@ -6,6 +6,7 @@ from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 EpisodeStats = namedtuple("Stats",["episode_lengths", "episode_rewards"])
+TimestepStats = namedtuple("Stats",["cumulative_rewards", "regrets"])
 
 def plot_cost_to_go_mountain_car(env, estimator, num_tiles=20):
     x = np.linspace(env.observation_space.low[0], env.observation_space.high[0], num=num_tiles)
@@ -96,3 +97,48 @@ def plot_episode_stats(stats, smoothing_window=10, noshow=False):
         plt.show(fig3)
 
     return fig1, fig2, fig3
+
+def plot_arm_rewards(y, hideplot=False):
+    
+    N = len(y)
+    x = range(N)
+    width = 1/1.5
+    
+    fig1 = plt.figure(figsize=(10,5))
+    plt.bar(x, y, width)
+    
+    plt.xlabel("Arm")
+    plt.ylabel("Probability")
+    plt.title("Arm's Reward Distribution")
+    
+    if hideplot:
+        plt.close(fig1)
+    else:
+        plt.show(fig1)
+             
+    return fig1
+
+def plot_reward_regret(stats, smoothing_window=1, hideplot=False):
+    # Plot the cumulative reward over time
+    fig1 = plt.figure(figsize=(10,5))
+    plt.plot(stats.cumulative_rewards)
+    plt.xlabel("Timestep")
+    plt.ylabel("Cumulative Reward")
+    plt.title("Cumulative Reward over Timestep")
+    if hideplot:
+        plt.close(fig1)
+    else:
+        plt.show(fig1)
+
+    # Plot the regret over time
+    fig2 = plt.figure(figsize=(10,5))
+    plt.plot(stats.regrets)
+    plt.xlabel("Timestep")
+    plt.ylabel("Regret")
+    plt.title("Regret over Timestep")
+    if hideplot:
+        plt.close(fig2)
+    else:
+        plt.show(fig2)
+             
+    return fig1, fig2
