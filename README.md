@@ -1,5 +1,5 @@
 ### Overview
-Implementation of algorithms from "[Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto"](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and ["David Silver's Reinforcement Learning Course"](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+Implementation of algorithms from [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and [David Silver's Reinforcement Learning Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 Each folder in corresponds to one or more chapters of the above textbook and/or course.
 
