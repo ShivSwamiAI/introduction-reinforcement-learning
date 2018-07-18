@@ -29,7 +29,7 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
 
 MIT License
 
-Copyright for portions are held by Denny Britz as part of https://github.com/dennybritz/reinforcement-learning abd other portions are held by Microsoft as part of https://courses.edx.org/courses/course-v1:Microsoft+DAT257x+2T2018/course/ .
+Copyright for portions are held by Denny Britz as part of https://github.com/dennybritz/reinforcement-learning abd other portions are held by Microsoft as part of https://www.edx.org/course/reinforcement-learning-explained-0 .
 
 Copyright (c) 2016 Denny Britz Copyright (c) 2018 Microsoft
 
