@@ -1,18 +1,12 @@
 ### Overview
+Implementation of algorithms from [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and [David Silver's Reinforcement Learning Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
-This repository provides code, exercises and solutions for popular Reinforcement Learning algorithms. These are meant to serve as a learning tool to complement the theoretical materials from
-
-- [Reinforcement Learning: An Introduction (2nd Edition)](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
-- [David Silver's Reinforcement Learning Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
-
-Each folder in corresponds to one or more chapters of the above textbook and/or course. In addition to exercises and solution, each folder also contains a list of learning goals, a brief concept summary, and links to the relevant readings.
-
-All code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [Tensorflow](https://www.tensorflow.org/) for neural network implementations.
+Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [PyTorch](https://www.tensorflow.org/) for neural network implementations.
 
 
 ### Table of Contents
 
-- [Introduction to RL problems & OpenAI Gym](Introduction/)
+- [Multi-armed Bandits](Bandits/)
 - [MDPs and Bellman Equations](MDP/)
 - [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DP/)
 - [Monte Carlo Model-Free Prediction & Control](MC/)
@@ -28,19 +22,14 @@ All code is written in Python 3 and uses RL environments from [OpenAI Gym](https
 
 ### Resources
 
-Textbooks:
-
 - [Reinforcement Learning: An Introduction (2nd Edition)](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
-
-Classes:
-
 - [David Silver's Reinforcement Learning Course (UCL, 2015)](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 ### License
 
 MIT License
 
-Copyright for portions are held by Denny Britz as part of https://github.com/dennybritz/reinforcement-learning abd other portions are held by Microsoft as part of https://courses.edx.org/courses/course-v1:Microsoft+DAT257x+2T2018/course/ .
+Copyright for portions are held by Denny Britz as part of https://github.com/dennybritz/reinforcement-learning abd other portions are held by Microsoft as part of https://www.edx.org/course/reinforcement-learning-explained-0 .
 
 Copyright (c) 2016 Denny Britz Copyright (c) 2018 Microsoft
 
