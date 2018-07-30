@@ -98,18 +98,18 @@ def plot_episode_stats(stats, smoothing_window=10, noshow=False):
 
     return fig1, fig2, fig3
 
-def plot_arm_rewards(y, hideplot=False):
+def plot_action_rewards(y, hideplot=False):
     
     N = len(y)
     x = range(N)
-    width = 1/1.5
+    width = 1
     
     fig1 = plt.figure(figsize=(10,5))
     plt.bar(x, y, width)
     
-    plt.xlabel("Arm")
+    plt.xlabel("Action")
     plt.ylabel("Probability")
-    plt.title("Arm's Reward Distribution")
+    plt.title("Action's Reward Distribution")
     
     if hideplot:
         plt.close(fig1)

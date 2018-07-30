@@ -73,13 +73,16 @@ class Experiment(object):
     def run_bandit(self, max_number_of_trials=1000, display_frequency=1):
         self.fig.clf()
         
-        print("Distribution:", self.env.distribution, self.env.reward_parameters, flush = True)
-        print("Optimal arm:", self.env.optimal_arm, flush = True)
+        if self.env.distribution != 'normal':
+            print("Distribution:", self.env.distribution, self.env.reward_parameters, flush = True)
+        else:
+            print("Distribution:", self.env.distribution, self.env.reward_parameters[0], flush = True)
+        print("Optimal action:", self.env.optimal_arm, flush = True)
         
         if self.env.distribution != "normal":
-            plotting.plot_arm_rewards(self.env.reward_parameters)
-        #else:
-            #plotting.plot_arm_rewards(self.env.reward_parameters[0])
+            plotting.plot_action_rewards(self.env.reward_parameters)
+        else:
+            plotting.plot_action_rewards(self.env.reward_parameters[0])
         
         stats = plotting.TimestepStats(
             cumulative_rewards=np.zeros(max_number_of_trials),

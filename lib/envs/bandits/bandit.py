@@ -1,24 +1,8 @@
 import numpy as np
 import sys
+from lib.envs.bandits.env import Environment
+from lib.envs.bandits.action_space import ActionSpace
 
-### Interface
-class Environment(object):
-
-    def reset(self):
-        raise NotImplementedError('Inheriting classes must override reset.')
-
-    def actions(self):
-        raise NotImplementedError('Inheriting classes must override actions.')
-
-    def step(self):
-        raise NotImplementedError('Inheriting classes must override step')
-
-class ActionSpace(object):
-    
-    def __init__(self, actions):
-        self.actions = actions
-        self.n = len(actions)
-        
 class BanditEnv(Environment):
     def __init__(self, num_actions = 10, distribution = "bernoulli", evaluation_seed="387"):
         super(BanditEnv, self).__init__()
@@ -50,9 +34,9 @@ class BanditEnv(Environment):
     
     def compute_gap(self, action):
         if self.distribution != "normal":
-            gap = np.absolute(self.reward_parameters[self.optimal_arm] - self.reward_parameters[action])
+            gap = self.reward_parameters[self.optimal_arm] - self.reward_parameters[action]
         else:
-            gap = np.absolute(self.reward_parameters[0][self.optimal_arm] - self.reward_parameters[0][action])
+            gap = self.reward_parameters[0][self.optimal_arm] - self.reward_parameters[0][action]
         return gap
     
     def step(self, action):
@@ -68,15 +52,15 @@ class BanditEnv(Environment):
         if self.distribution == "bernoulli":
             if valid_action:
                 reward = np.random.binomial(1, self.reward_parameters[action])
-                gap = self.reward_parameters[self.optimal_arm] - self.reward_parameters[action]
+                gap = self.compute_gap(action)
         elif self.distribution == "normal":
             if valid_action:
                 reward = self.reward_parameters[0][action] + self.reward_parameters[1][action] * np.random.randn()
-                gap = self.reward_parameters[0][self.optimal_arm] - self.reward_parameters[0][action]
+                gap = self.compute_gap(action)
         elif self.distribution == "heavy-tail":
             if valid_action:
                 reward = self.reward_parameters[action] + np.random.standard_cauchy()
-                gap = self.reward_parameters[self.optimal_arm] - self.reward_parameters[action]        #HACK to compute expected gap
+                gap = self.compute_gap(action)
         else:
             print("Please use a supported reward distribution", flush = True)
             sys.exit(0)
