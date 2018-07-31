@@ -9,6 +9,10 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
 - [Multi-armed Bandits](Bandits/)
     - Greedy Policy
     - Round Robin Policy
+    - Epsilon Greedy
+    - Optimistic Greedy
+    - UCB
+    - Thompson Beta
 - [MDPs and Bellman Equations](MDP/)
 - [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DP/)
 - [Monte Carlo Model-Free Prediction & Control](MC/)
