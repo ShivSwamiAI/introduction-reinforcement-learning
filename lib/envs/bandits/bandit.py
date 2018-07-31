@@ -46,21 +46,17 @@ class BanditEnv(Environment):
         if (action is None or action < 0 or action >= self.action_space.n):
             print("Algorithm chose an invalid action; reset reward to -inf", flush = True)
             reward = float("-inf")
-            gap = float("inf")
             valid_action = False
         
         if self.distribution == "bernoulli":
             if valid_action:
                 reward = np.random.binomial(1, self.reward_parameters[action])
-                gap = self.compute_gap(action)
         elif self.distribution == "normal":
             if valid_action:
                 reward = self.reward_parameters[0][action] + self.reward_parameters[1][action] * np.random.randn()
-                gap = self.compute_gap(action)
         elif self.distribution == "heavy-tail":
             if valid_action:
                 reward = self.reward_parameters[action] + np.random.standard_cauchy()
-                gap = self.compute_gap(action)
         else:
             print("Please use a supported reward distribution", flush = True)
             sys.exit(0)

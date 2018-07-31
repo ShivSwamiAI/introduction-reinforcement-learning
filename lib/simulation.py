@@ -99,8 +99,7 @@ class Experiment(object):
             cumulative_reward += reward
 
             gap = self.env.compute_gap(action)
-            if action != self.env.optimal_arm:
-                cumulative_regret += gap
+            cumulative_regret += gap
 
             stats.cumulative_rewards[trial] = cumulative_reward
             stats.regrets[trial] = cumulative_regret
