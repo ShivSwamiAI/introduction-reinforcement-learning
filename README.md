@@ -7,7 +7,7 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
 ### Table of Contents
 
 - [Multi-armed Bandits](Bandits/)
-    - Greedy Policy
+    - [Greedy Policy](Bandits/Greedy.ipynb)
     - Round Robin Policy
     - Epsilon Greedy
     - Optimistic Greedy
