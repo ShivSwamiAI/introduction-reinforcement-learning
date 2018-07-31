@@ -19,7 +19,10 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
     - [Policy Evaluation In-place](DynamicProgramming/Policy%20Evaluation%20In-place.ipynb)
     - [Policy Iteration](DynamicProgramming/Policy%20Iteration.ipynb)
     - [Value Iteration](DynamicProgramming/Value%20Iteration.ipynb)
-- [Monte Carlo Model-Free Prediction & Control](MC/)
+- [Monte Carlo Model-Free Prediction & Control](MonteCarlo/)
+    - [Prediction](MonteCarlo/MC%20Prediction.ipynb)
+    - [On-Policy Control with Epsilon-Greedy Policy](MonteCarlo/MC%20Control%20with%20Epsilon-Greedy%20Policies.ipynb)
+    - [Off-Policy Control with Importance Sampling](MonteCarlo/Off-Policy%20MC%20Control%20with%20Weighted%20Importance%20Sampling.ipynb)
 
 
 ### Resources
