@@ -7,23 +7,15 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
 ### Table of Contents
 
 - [Multi-armed Bandits](Bandits/)
-    - [Greedy Policy](Bandits/Greedy.ipynb)
-    - Round Robin Policy
-    - Epsilon Greedy
-    - Optimistic Greedy
-    - UCB
-    - Thompson Beta
+    - [Greedy](Bandits/Greedy.ipynb)
+    - [Round Robin](Bandits/Round%20Robin.ipynb)
+    - [Epsilon Greedy](Bandits/Epsilon%20Greedy.ipynb)
+    - [Optimistic Greedy](Bandits/Optimistic%20Greedy.ipynb)
+    - [UCB](Bandits/UCB.ipynb)
+    - [Thompson Beta](Bandits/Thompson%20Beta.ipynb)
 - [MDPs and Bellman Equations](MDP/)
 - [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DP/)
 - [Monte Carlo Model-Free Prediction & Control](MC/)
-
-
-### List of Implemented Algorithms
-
-- [Dynamic Programming Policy Evaluation](DP/Policy%20Evaluation.ipynb)
-- [Dynamic Programming Policy Iteration](DP/Policy%20Iteration.ipynb)
-- [Dynamic Programming Value Iteration](DP/Value%20Iteration.ipynb)
-- [Monte Carlo Prediction](MC/MC%20Prediction.ipynb)
 
 
 ### Resources
