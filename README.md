@@ -14,7 +14,11 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
     - [UCB](Bandits/UCB.ipynb)
     - [Thompson Beta](Bandits/Thompson%20Beta.ipynb)
 - [MDPs and Bellman Equations](MDP/)
-- [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DP/)
+- [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DynamicProgramming/)
+    - [Policy Evaluation Two-arrays](DynamicProgramming/Policy%20Evaluation%20Two%20Arrays.ipynb)
+    - [Policy Evaluation In-place](DynamicProgramming/Policy%20Evaluation%20In-place.ipynb)
+    - [Policy Iteration](DynamicProgramming/Policy%20Iteration.ipynb)
+    - [Value Iteration](DynamicProgramming/Value%20Iteration.ipynb)
 - [Monte Carlo Model-Free Prediction & Control](MC/)
 
 
