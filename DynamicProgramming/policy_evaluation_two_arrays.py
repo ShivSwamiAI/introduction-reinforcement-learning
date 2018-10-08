@@ -33,12 +33,13 @@ def policy_eval(policy, env, discount_factor=1.0, theta=0.00001):
         # Initialize (all 0) a second array with the value function for next time step
         V_next = np.zeros(env.nS)
 
-        for s, actions in env.P.items():
+        for state, actions in env.P.items():
             for a in actions.keys():
-                for prob, next_state, reward, done in env.P[s][a]:
-                    V_next[s] += policy[s, a] * prob * (reward + discount_factor * V[next_state])  # (Eq. 4.5)
+                for trans_prob, next_state, reward, done in env.P[state][a]:
+                    V_next[state] += policy[state, a] * trans_prob * (
+                                reward + discount_factor * V[next_state])  # (Eq. 4.5)
 
-        # Stop evaluation once value funtion change insignificant
+        # Stop evaluation once value function change insignificant
         if np.all(np.abs(V_next - V) < theta):
             break
         else:
@@ -48,7 +49,6 @@ def policy_eval(policy, env, discount_factor=1.0, theta=0.00001):
 
 
 if __name__ == '__main__':
-
     #################################
     ### Example 4.1 4x4 Gridworld
     #################################
