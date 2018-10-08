@@ -1,7 +1,11 @@
 ### Overview
 Implementation of algorithms from [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and [Reinforcement Learning, UCL](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
-Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [PyTorch](https://www.tensorflow.org/) for neural network implementations.
+### Requirements
+
+- Python 3.5
+- [OpenAI Gym](https://gym.openai.com/)
+- [PyTorch](https://pytorch.org/)
 
 
 ### Table of Contents
