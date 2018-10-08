@@ -32,20 +32,18 @@ def policy_eval(policy, env, discount_factor=1.0, theta=0.00001):
     while True:
         # Initialize (all 0) a second array with the value function for next time step
         V_next = np.zeros(env.nS)
-
+        delta = 0.
         for state, actions in env.P.items():
             for a in actions.keys():
                 for trans_prob, next_state, reward, done in env.P[state][a]:
                     V_next[state] += policy[state, a] * trans_prob * (
                                 reward + discount_factor * V[next_state])  # (Eq. 4.5)
-
+            delta = max(delta, abs(V_next[state] - V[state]))
+        # Update current value function by next-time-step value function
+        V = V_next
         # Stop evaluation once value function change insignificant
-        if np.all(np.abs(V_next - V) < theta):
-            break
-        else:
-            # Update current value function by next-time-step value function
-            V = V_next
-    return V
+        if delta < theta:
+            return V
 
 
 if __name__ == '__main__':
