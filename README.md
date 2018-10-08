@@ -1,5 +1,5 @@
 ### Overview
-Implementation of algorithms from [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and [Advanced Topics  2015 (COMPM050/COMPGI13) Reinforcement Learning - UCL, David Silver](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+Implementation of algorithms from [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf) and [Reinforcement Learning, UCL](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://gym.openai.com/). Advanced techniques use [PyTorch](https://www.tensorflow.org/) for neural network implementations.
 
@@ -28,7 +28,7 @@ Code is written in Python 3 and uses RL environments from [OpenAI Gym](https://g
 ### Resources
 
 - [Reinforcement Learning: An Introduction (2nd Edition)](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
-- [Advanced Topics  2015 (COMPM050/COMPGI13) Reinforcement Learning - UCL, David Silver](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+- [Reinforcement Learning, UCL](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 ### License
 
