@@ -23,8 +23,7 @@ Implementation of algorithms from the definitive textbook on [Reinforcement Lear
     - [Policy Evaluation In-place](DynamicProgramming/policy_evaluation_in_place.py)
     - [Policy Iteration](DynamicProgramming/policy_iteration.py)
     - [Value Iteration](DynamicProgramming/value_iteration.py)
-- [Monte Carlo Model-Free Prediction & Control](MonteCarlo/)
-    - [Prediction](MonteCarlo/MC%20Prediction.ipynb)
+- [Monte Carlo Model-Free Prediction & Control](MonteCarlo/incremental_first_visit_mc_prediction.py)
     - [On-Policy Control with Epsilon-Greedy Policy](MonteCarlo/MC%20Control%20with%20Epsilon-Greedy%20Policies.ipynb)
     - [Off-Policy Control with Importance Sampling](MonteCarlo/Off-Policy%20MC%20Control%20with%20Weighted%20Importance%20Sampling.ipynb)
 
