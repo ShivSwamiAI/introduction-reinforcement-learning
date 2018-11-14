@@ -2,40 +2,16 @@
 Implementation of algorithms from the definitive textbook on [Reinforcement Learning: An Introduction (2nd Edition) by Richard Sutton and Andrew Barto](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
 
 ### Requirements
-
-- Python 3.5
+- Python 3.6
 - [OpenAI Gym](https://gym.openai.com/)
 - [PyTorch](https://pytorch.org/)
 
 
-### Table of Contents
-
-- [Multi-armed Bandits](Bandits/)
-    - [Greedy](Bandits/Greedy.ipynb)
-    - [Round Robin](Bandits/Round%20Robin.ipynb)
-    - [Epsilon Greedy](Bandits/Epsilon%20Greedy.ipynb)
-    - [Optimistic Greedy](Bandits/Optimistic%20Greedy.ipynb)
-    - [UCB](Bandits/UCB.ipynb)
-    - [Thompson Beta](Bandits/Thompson%20Beta.ipynb)
-- [MDPs and Bellman Equations](MDP/)
-- [Dynamic Programming: Model-Based RL, Policy Iteration and Value Iteration](DynamicProgramming/)
-    - [Policy Evaluation Two-arrays](DynamicProgramming/policy_evaluation_two_arrays.py)
-    - [Policy Evaluation In-place](DynamicProgramming/policy_evaluation_in_place.py)
-    - [Policy Iteration](DynamicProgramming/policy_iteration.py)
-    - [Value Iteration](DynamicProgramming/value_iteration.py)
-- [Monte Carlo Model-Free Prediction & Control](MonteCarlo/)
-    - [Incremental First-Visit Monte Carlo Prediction](MonteCarlo/incremental_first_visit_mc_prediction.py)
-    - [On-Policy Control with Epsilon-Greedy Policy](MonteCarlo/MC%20Control%20with%20Epsilon-Greedy%20Policies.ipynb)
-    - [Off-Policy Control with Importance Sampling](MonteCarlo/Off-Policy%20MC%20Control%20with%20Weighted%20Importance%20Sampling.ipynb)
-
-
 ### Resources
-
 - [Reinforcement Learning: An Introduction (2nd Edition)](http://incompleteideas.net/book/bookdraft2018mar21.pdf)
 - [Reinforcement Learning, UCL](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
 ### License
-
 MIT License
 
 Copyright for some portions are held by Denny Britz as part of https://github.com/dennybritz/reinforcement-learning and other portions are held by Microsoft as part of https://www.edx.org/course/reinforcement-learning-explained-0
